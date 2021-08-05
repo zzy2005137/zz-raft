@@ -24,7 +24,7 @@ sudo apt install docker.io
 
 #修改镜像源
 echo "change docker image download source"
-sudo echo "{\"registry-mirrors\":[\"http://hub-mirror.c.163.com\"]}" >> daemon.json
+sudo echo "{\"registry-mirrors\":[\"https://kfwkfulq.mirror.aliyuncs.com\",\"http://hub-mirror.c.163.com\"]}" >> daemon.json
 sudo cp daemon.json /etc/docker/
 #重启docker服务
 sudo systemctl daemon-reload
